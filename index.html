@@ -1,0 +1,23 @@
+<
+<body>
+    <script>
+        const xhr = new XMLHttpRequest();
+        const url = 'http://localhost:3000/contacts';
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader('content-Type', 'application/json');
+
+        const message = {
+	"name": "Taspyn Xavierah",
+	"subject": "Special message",
+	"message": "Please register me for the akirachix class onf 2019"
+}
+
+const messageString = JSON.stringify(message);
+
+xhr.send(messageString);
+    </script>
+</body>
+
+
+
+
